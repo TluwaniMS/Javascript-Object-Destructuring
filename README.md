@@ -31,3 +31,17 @@ console.log(`The persons full name is ${firstName} ${lastName}.`);
 The persons full name is Thando Mlambo
 ```
 * How to access object properties and assign a new name to them and a default parameter:
+
+```
+const person = {
+  name: "Thando",
+  surname: "Mlambo",
+  gender: "Female"
+};
+
+const { nickName: preferedName = "John", surname: lastName = "Doe" } = person;
+
+console.log(`The persons full name is ${preferedName} ${lastName}.`);
+///Will print:
+The persons full name is John Mlambo.
+```
